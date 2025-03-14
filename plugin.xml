@@ -27,6 +27,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <preference name="IOS_FIREBASE_POD_VERSION" default="10.17.0" />
         <hook type="after_prepare" src="hooks/ios/iOSCopyPreferences.js" />
         <hook type="before_plugin_install" src="hooks/ios/iosMoveFiles.js" />
+        <resource-file src="GoogleService-Info.plist" target="./GoogleService-Info.plist" />
 
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
